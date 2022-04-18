@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 /* utilities */
@@ -21,12 +21,16 @@ a {
 
 .container {
   width: 95%;
-  max-width: 1180px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
+}
+
+section {
+  padding: 2rem 0;
 }
 
 /* header */
@@ -50,6 +54,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
 
   padding: 1.25rem;
 }
@@ -102,7 +108,6 @@ img {
 
 .main-section-title {
   font-size: 3.5rem;
-  font-weight: 500;
   line-height: 1;
   margin-bottom: 1rem;
 }
@@ -113,7 +118,117 @@ img {
   margin-bottom: 2rem;
 }
 
+/* news section */
+
+.news-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2rem;
+}
+
+/* news section left col */
+
+/* .left-col {
+  display: flex;
+  flex-direction: column;
+} */
+
+.post:first-child {
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 1.5rem;
+}
+
+.post-title {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+.post-title:before {
+  content: 'COTIDIANO';
+  color: #981916;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-desc {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #777;
+  max-width: 50ch;
+}
+
+/* news section right col */
+
+.news-right-col-img {
+  margin-bottom: 1rem;
+}
+
+.news-right-col-title {
+  margin-bottom: 0.5rem;
+}
+
+.news-right-col-desc {
+  line-height: 1.6;
+}
+
+/* banner */
+
+.banner-2 {
+  margin: 1rem 0;
+}
+
+.banner-2-text {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #777;
+}
+
+.banner-2-img {
+  padding: 1rem 0;
+  background-color: #f2f2f2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-2-img-img {
+  width: 80%;
+}
+
+/* section three */
+.section-three {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  justify-items: center;
+}
+
+.section-three-left-col,
+.section-three-right-col {
+  border: 3px solid red;
+}
+
 /* empty */
 .empty {
   height: 100vh;
+}
+
+/* footer */
+
+footer {
+  background-color: #981916;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer-text {
+  text-align: center;
+  line-height: 1.8;
+  font-size: 0.75rem;
+}
+
+.footer-icons {
+  text-align: center;
 }
