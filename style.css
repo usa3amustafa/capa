@@ -995,8 +995,23 @@ footer {
     display: block;
   }
 
-  .section-fourteen-blog-post {
-    display: inline-block;
+  .right-col-last-section {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  .right-col-last-section img {
+    width: 100%;
+  }
+
+  .section-fourteen-post-one {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .section-fourteen-post-one > img {
+    width: 100%;
   }
 
   .section-fourteen-post-title {
