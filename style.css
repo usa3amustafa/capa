@@ -396,7 +396,7 @@ section {
 
 .section-eight-blog-post {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
 
   padding: 1rem 0;
@@ -447,6 +447,329 @@ section {
 
 .video-section-right-col {
   justify-self: flex-end;
+}
+
+/* section ten */
+
+.section-ten {
+  display: grid;
+  grid-template-columns: 1fr 550px 1fr;
+  column-gap: 1rem;
+  align-items: flex-start;
+}
+
+.left-col-section-ten-post > .post-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.left-col-section-ten-post > .post-title {
+  font-size: 1rem;
+}
+.right-col-section-ten-post > .post-title {
+  font-size: 1rem;
+}
+
+.left-col-section-ten-post-one > .post-title::before {
+  content: 'COTIDIANO';
+}
+
+.left-col-section-ten-post-two > .post-title::before {
+  content: 'PROGRAMA DA JÔ';
+}
+
+.right-col-section-ten-post-one > .post-title::before {
+  content: 'BOA CONVERSA';
+}
+
+.right-col-section-ten-post-two > .post-title::before {
+  content: 'OUSADIA';
+}
+
+.middle-col-section-ten-img {
+  background-color: #333;
+}
+
+.middle-col-section-ten-img > img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.middle-col-section-ten-title {
+  font-size: 1.5rem;
+  background-color: #333;
+  padding: 1rem;
+  color: #fff;
+}
+
+.middle-col-section-ten-title::before {
+  content: '';
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: #981916;
+}
+
+/* section eleven */
+.section-eleven {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1rem;
+
+  border-top: 1px solid #981916;
+}
+
+.section-eleven-title {
+  grid-column: 1/-1;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+}
+
+.left-col-section-eleven {
+  grid-column: 1/4;
+}
+
+.middle-col-section-eleven {
+  grid-column: 4/9;
+}
+.right-col-section-eleven {
+  grid-column: 9/-1;
+}
+
+.left-col-section-eleven-post > .post-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.middle-col-section-eleven > img,
+.left-col-section-eleven > img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+.right-col-section-eleven-post {
+  padding-top: 0.5rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.right-col-section-eleven-post:last-child {
+  border-bottom: none;
+}
+
+.right-col-section-eleven-post > .post-title {
+  font-size: 1rem;
+}
+.right-col-section-eleven-post-one > .post-title::before {
+  content: 'OPORTUNIDADE';
+}
+.right-col-section-eleven-post-three > .post-title::before {
+  content: 'A CASA CAIU';
+}
+.right-col-section-eleven-post-four > .post-title::before {
+  content: 'COTIDIANO';
+}
+.right-col-section-eleven-post-five > .post-title::before {
+  content: 'MEIO AMBIENTE';
+}
+.right-col-section-eleven-post-six > .post-title::before {
+  content: 'PINGUELA PERIGOSA';
+}
+
+/* section twelve */
+
+.twelve {
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+}
+
+.section-twelve {
+  text-align: center;
+}
+
+/* section thirteen */
+.section-thirteen {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1rem;
+}
+
+.left-col-section-thirteen {
+  grid-column: 1/6;
+}
+
+.middle-col-section-thirteen {
+  grid-column: 6/10;
+}
+.right-col-section-thirteen {
+  grid-column: 10/-1;
+}
+
+.middle-col-section-thirteen-post {
+  border-bottom: 1px solid #f2f2f2;
+  padding-top: 0.5rem;
+}
+.last {
+  border-bottom: none;
+}
+
+.middle-col-section-thirteen-post > .post-title {
+  font-size: 1rem;
+}
+
+.middle-col-section-thirteen-post-one > .post-title::before {
+  content: 'OPORTUNIDADE';
+}
+.middle-col-section-thirteen-post-two > .post-title::before {
+  content: 'APROVADO EM COMISSÕES';
+}
+.middle-col-section-thirteen-post-three > .post-title::before {
+  content: 'A CASA CAIU';
+}
+.middle-col-section-thirteen-post-three > .post-title::before {
+  content: 'COTIDIANO';
+}
+
+.section-thirteen-img {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.section-thirteen-image-before-text {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #777;
+  margin-bottom: 0.25rem;
+}
+
+.left-col-section-thirteen > img,
+.right-col-section-thirteen > img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+
+/* section fourteen */
+.section-fourteen {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 1rem;
+}
+
+.section-fourteen > div:first-child {
+  border-top: 2px solid #981916;
+  padding-top: 1rem;
+}
+.section-fourteen > div:last-child {
+  border-top: 2px solid #06aa48;
+  padding-top: 1rem;
+}
+
+.section-fourteen-left-col-title {
+  margin-bottom: 2rem;
+}
+
+.section-fourteen-left-col > img {
+  width: 100%;
+}
+
+.section-fourteen-left-col-title::after {
+  content: 'Com Sandra Assunção - Direto de Cruzeiro do Sul';
+  color: #777;
+  font-size: 0.75rem;
+  border-left: 2px solid #981916;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.section-fourteen-left-col-post-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.section-fourteen-left-col-post-one-title {
+  font-size: 2.75rem;
+}
+
+.section-fourteen-left-col-post-one-title::before {
+  content: 'FORÇA DAS ÁGUAS';
+  display: block;
+  color: #981916;
+  font-size: 0.875rem;
+}
+
+.section-fourteen-blog-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.section-fourteen-left-col-blog-post > img {
+  width: 100%;
+}
+
+.section-fourteen-left-col-blog-title {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.section-fourteen-left-col-blog-title::before {
+  font-size: 0.875rem;
+  color: #981916;
+  display: block;
+}
+
+.section-fourteen-left-col-blog-title-one::before {
+  content: 'PLANO DE CONTINGÊNCIA';
+}
+
+.section-fourteen-left-col-blog-title-two::before {
+  content: 'CAPACITAÇÃO';
+}
+
+.section-fourteen-left-col-blog-title-three::before {
+  content: 'POLÍCIA NA RUA';
+}
+
+.section-fourteen-last-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.right-col-last-section {
+  margin-top: 1rem;
+}
+
+.section-fourteen-last-section-blog-title {
+  font-size: 1rem;
+}
+
+.section-fourteen-blog-post {
+  border-bottom: 1px solid #ddd;
+}
+
+.section-fourteen-blog-post:last-child {
+  border: none;
+}
+
+.section-fourteen-post-one {
+  background-color: #06aa48;
+  margin-bottom: 1rem;
+}
+
+.section-fourteen-post-title {
+  font-size: 0.875rem;
+  color: #fff;
+  padding: 0.5rem;
 }
 
 /* footer */
