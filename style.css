@@ -37,6 +37,20 @@ section {
   color: #981916;
 }
 
+.before-text {
+  color: #981916;
+  font-size: 0.875rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.before-text-inline {
+  display: inline-block;
+  color: #981916;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
 /* header */
 
 .header-section {
@@ -98,7 +112,7 @@ section {
     url('./img/main.jpg');
   background-size: cover;
   background-position: top center;
-  height: 30rem;
+  height: 600px;
 }
 
 .main-section {
@@ -147,14 +161,6 @@ section {
   margin-bottom: 1rem;
 }
 
-.post-title:before {
-  content: 'COTIDIANO';
-  color: #981916;
-  font-size: 1rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
 .post-desc {
   font-size: 1rem;
   margin-bottom: 2rem;
@@ -184,8 +190,10 @@ section {
 
 .banner-2-text {
   text-align: center;
+  font-family: ;
   margin-bottom: 1rem;
   color: #777;
+  font-family: 'Cairo', sans-serif;
 }
 
 .banner-2-img {
@@ -235,36 +243,10 @@ section {
   margin-bottom: 1rem;
 }
 
-.section-four-title:before {
-  color: #981916;
-  text-transform: uppercase;
-  display: block;
-  font-size: 0.9rem;
-}
-
-.section-four-post-one-title::before {
-  content: 'TUDO FAKE';
-}
-
-.section-four-post-two-title::before {
-  content: 'ALEAC';
-}
-
-.section-four-post-three-title::before {
-  content: 'FUGITIVO';
-}
-
 .section-four-subtitle {
   padding-bottom: 1rem;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1rem;
-}
-
-.section-four-subtitle:before {
-  content: 'TUDO FAKE';
-  color: #981916;
-  text-transform: uppercase;
-  font-size: 0.9rem;
 }
 
 /* section five */
@@ -339,14 +321,6 @@ section {
 
 .left-col-section-six-post > .post-title {
   font-size: 1rem;
-}
-
-.left-col-section-six-post-one > .post-title::before {
-  content: 'COTIDIANO';
-}
-
-.left-col-section-six-post-two > .post-title::before {
-  content: 'ESTUDANTES';
 }
 
 .middle-col-section-six > img,
@@ -470,22 +444,6 @@ section {
   font-size: 1rem;
 }
 
-.left-col-section-ten-post-one > .post-title::before {
-  content: 'COTIDIANO';
-}
-
-.left-col-section-ten-post-two > .post-title::before {
-  content: 'PROGRAMA DA JÔ';
-}
-
-.right-col-section-ten-post-one > .post-title::before {
-  content: 'BOA CONVERSA';
-}
-
-.right-col-section-ten-post-two > .post-title::before {
-  content: 'OUSADIA';
-}
-
 .middle-col-section-ten-img {
   background-color: #333;
 }
@@ -501,15 +459,6 @@ section {
   background-color: #333;
   padding: 1rem;
   color: #fff;
-}
-
-.middle-col-section-ten-title::before {
-  content: '';
-  display: inline-block;
-  height: 1rem;
-  width: 1rem;
-  border-radius: 50%;
-  background-color: #981916;
 }
 
 /* section eleven */
@@ -562,21 +511,6 @@ section {
 .right-col-section-eleven-post > .post-title {
   font-size: 1rem;
 }
-.right-col-section-eleven-post-one > .post-title::before {
-  content: 'OPORTUNIDADE';
-}
-.right-col-section-eleven-post-three > .post-title::before {
-  content: 'A CASA CAIU';
-}
-.right-col-section-eleven-post-four > .post-title::before {
-  content: 'COTIDIANO';
-}
-.right-col-section-eleven-post-five > .post-title::before {
-  content: 'MEIO AMBIENTE';
-}
-.right-col-section-eleven-post-six > .post-title::before {
-  content: 'PINGUELA PERIGOSA';
-}
 
 /* section twelve */
 
@@ -619,19 +553,6 @@ section {
   font-size: 1rem;
 }
 
-.middle-col-section-thirteen-post-one > .post-title::before {
-  content: 'OPORTUNIDADE';
-}
-.middle-col-section-thirteen-post-two > .post-title::before {
-  content: 'APROVADO EM COMISSÕES';
-}
-.middle-col-section-thirteen-post-three > .post-title::before {
-  content: 'A CASA CAIU';
-}
-.middle-col-section-thirteen-post-three > .post-title::before {
-  content: 'COTIDIANO';
-}
-
 .section-thirteen-img {
   background-color: #f2f2f2;
   text-align: center;
@@ -643,6 +564,7 @@ section {
   font-size: 0.7rem;
   color: #777;
   margin-bottom: 0.25rem;
+  font-family: 'Cairo', sans-serif;
 }
 
 .left-col-section-thirteen > img,
@@ -697,13 +619,6 @@ section {
   font-size: 2.75rem;
 }
 
-.section-fourteen-left-col-post-one-title::before {
-  content: 'FORÇA DAS ÁGUAS';
-  display: block;
-  color: #981916;
-  font-size: 0.875rem;
-}
-
 .section-fourteen-blog-posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -717,24 +632,6 @@ section {
 .section-fourteen-left-col-blog-title {
   font-size: 1.25rem;
   margin-top: 1rem;
-}
-
-.section-fourteen-left-col-blog-title::before {
-  font-size: 0.875rem;
-  color: #981916;
-  display: block;
-}
-
-.section-fourteen-left-col-blog-title-one::before {
-  content: 'PLANO DE CONTINGÊNCIA';
-}
-
-.section-fourteen-left-col-blog-title-two::before {
-  content: 'CAPACITAÇÃO';
-}
-
-.section-fourteen-left-col-blog-title-three::before {
-  content: 'POLÍCIA NA RUA';
 }
 
 .section-fourteen-last-section {
