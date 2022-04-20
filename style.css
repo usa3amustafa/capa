@@ -696,6 +696,7 @@ footer {
 
   .main-section-desc {
     font-size: 1.25rem;
+    margin-bottom: 0;
   }
 
   /* news section */
