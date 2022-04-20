@@ -719,13 +719,21 @@ footer {
 
   /* news section right col */
 
-  .news-right-col-title {
+  .news-section .right-col {
+    grid-row: 1/2;
+  }
+
+  .news-section .right-col img {
+    width: 100%;
+  }
+
+  /* .news-right-col-title {
     max-width: 50ch;
   }
 
   .news-right-col-desc {
     max-width: 80ch;
-  }
+  } */
 
   /* section four */
 
@@ -738,6 +746,13 @@ footer {
   }
 
   /* section five */
+  .section-five {
+    justify-content: space-between;
+  }
+
+  .stock-rate {
+    padding: 0.5rem;
+  }
 
   /* section six */
   .section-six {
@@ -763,7 +778,7 @@ footer {
 
   /* section eight */
   .section-eight {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 5fr 3fr;
   }
 
   /* section nine */
@@ -805,6 +820,10 @@ footer {
     gap: 2rem;
   }
 
+  .right-col-section-ten-post {
+    width: 100%;
+  }
+
   .right-col-section-ten .post-title {
     max-width: 40ch;
   }
@@ -815,15 +834,22 @@ footer {
 
   /* section eleven */
 
+  .section-eleven {
+    row-gap: 2rem;
+  }
+
   .left-col-section-eleven {
-    grid-column: 1/5;
+    grid-row: 3/4;
+    grid-column: 8/-1;
   }
 
   .middle-col-section-eleven {
-    grid-column: 5/-1;
+    grid-column: 1/-1;
+    grid-row: 2/3;
   }
   .right-col-section-eleven {
-    grid-column: 1/-1;
+    grid-row: 3/4;
+    grid-column: 1/7;
   }
 
   /* section thirteen */
@@ -844,6 +870,19 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 1rem;
+  }
+
+  .section-fourteen-post-one {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .section-fourteen-post-one > img {
+    width: 100%;
+  }
+
+  .section-fourteen-post-title {
+    max-width: 40ch;
   }
 }
 
@@ -995,24 +1034,18 @@ footer {
   }
 
   /* section thirteen */
-  .section-thirteen {
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-  }
 
-  .left-col-section-thirteen {
-    grid-column: 1/-1;
+  .section-eleven {
+    display: flex;
+    flex-direction: column;
   }
 
   .left-col-section-thirteen > img {
     height: auto;
   }
 
-  .middle-col-section-thirteen {
-    grid-column: 1/-1;
-  }
-  .right-col-section-thirteen {
-    grid-column: 1/-1;
+  .left-col-section-eleven {
+    order: 4;
   }
 
   /* section fourteen */
@@ -1053,18 +1086,5 @@ footer {
 
   .right-col-last-section img {
     width: 100%;
-  }
-
-  .section-fourteen-post-one {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .section-fourteen-post-one > img {
-    width: 100%;
-  }
-
-  .section-fourteen-post-title {
-    max-width: 40ch;
   }
 }
